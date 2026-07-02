@@ -1,0 +1,13 @@
+{
+	"publicKeys": [
+		{
+			"kid": "arn:aws:kms:us-east-1:767397862016:key/7f6be9c0-dcaa-430c-92c9-7e011d7d927b",
+			"kty": "RSA",
+			"alg": "RS256",
+			"use": "sig",
+			"n": "o4RYOXW8u-Gc7iLqCDMTijrzjjDwPb47GJRAg58HEHheYFG7j-kbMj-eHG0C7wub68hha10qlKSQfYWb-cmUnlhRGlsk3LfNXocefm9vkRaWCidhB0gCR2V_o54-6fVRuY--2W2r_OOdVlbgnLgwE_r5-_xc6Tmo3QHN4Z3zcarLZj-QTFf-QHlKhpXus-sblXz_eQizYF9Lxpc4xivmpG_oAvJc1jeD3YBw-761lhiF4QUwubw0f-er8E7Xuy5yECmkZOWOJVhBgOyCNBxfyzX1P-VLSFd4lhzqLLMj4rHee3s9j0fLtdrJv1tifDKlkSkh1W_YwHJLNekWYV3yqw",
+			"e": "AQAB"
+		}
+	],
+	"publicKeysLastSyncedAt": "2026-05-05T18:33:58.873Z"
+}

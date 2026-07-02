@@ -1,0 +1,88 @@
+{
+	"preferences": {
+		"request": {
+			"sslVerification": false,
+			"customCaCertificate": {
+				"enabled": false,
+				"filePath": null
+			},
+			"keepDefaultCaCertificates": {
+				"enabled": true
+			},
+			"storeCookies": true,
+			"sendCookies": true,
+			"timeout": 0,
+			"oauth2": {
+				"useSystemBrowser": false
+			}
+		},
+		"font": {
+			"codeFont": "default",
+			"codeFontSize": 13
+		},
+		"proxy": {
+			"inherit": true,
+			"config": {
+				"protocol": "http",
+				"hostname": "",
+				"port": null,
+				"auth": {
+					"username": "",
+					"password": ""
+				},
+				"bypassProxy": ""
+			}
+		},
+		"features": {
+			"terminal": true,
+			"apiSpec": true,
+			"fileExplorer": true,
+			"git": true,
+			"brunoJson": false
+		},
+		"secretsProviders": [],
+		"awsConfig": {
+			"enabled": false,
+			"accessKeyId": "",
+			"secretAccessKey": "",
+			"region": "",
+			"sessionToken": ""
+		},
+		"azureConfig": {
+			"enabled": false,
+			"tenantId": "",
+			"clientId": "",
+			"clientSecret": ""
+		},
+		"autoupdate": {
+			"downloadUpdates": true
+		},
+		"layout": {
+			"responsePaneOrientation": "horizontal"
+		},
+		"beta": {},
+		"onboarding": {
+			"hasLaunchedBefore": true
+		},
+		"general": {
+			"defaultCollectionLocation": "",
+			"defaultWorkspacePath": "/home/hector/.config/bruno/default-workspace"
+		},
+		"autoSave": {
+			"enabled": false,
+			"interval": 1000
+		},
+		"license": {
+			"proxy": {
+				"auth": {}
+			}
+		}
+	},
+	"maximized": true,
+	"window-bounds": {
+		"x": 0,
+		"y": 0,
+		"width": 1900,
+		"height": 1011
+	}
+}

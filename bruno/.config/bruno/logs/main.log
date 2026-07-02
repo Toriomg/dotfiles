@@ -1,0 +1,188 @@
+[2026-03-21 19:45:25.120] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-03-21 19:45:25.122] [info]  Checking for update
+[2026-03-21 19:45:25.276] [info]  Generated new staging user ID: 143881ee-f4c4-565a-b29a-932dc46759f5
+[2026-03-21 19:45:26.055] [info]  Found version 3.2.0 (url: bruno_3.2.0_x86_64_linux.AppImage, bruno_3.2.0_amd64_linux.deb, bruno_3.2.0_x86_64_linux.rpm)
+[2026-03-21 19:45:26.055] [info]  Update to 3.2.0 available, download will start
+[2026-03-21 19:45:26.056] [info]  Downloading update from bruno_3.2.0_x86_64_linux.AppImage, bruno_3.2.0_amd64_linux.deb, bruno_3.2.0_x86_64_linux.rpm
+[2026-03-21 19:46:09.146] [info]  New version 3.2.0 has been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.2.0_amd64_linux.deb
+[2026-03-21 19:46:09.148] [info]  Update to 3.2.0 downloaded
+[2026-03-23 11:41:09.907] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-03-23 11:41:09.912] [info]  Checking for update
+[2026-03-23 11:41:10.891] [info]  Found version 3.2.0 (url: bruno_3.2.0_x86_64_linux.AppImage, bruno_3.2.0_amd64_linux.deb, bruno_3.2.0_x86_64_linux.rpm)
+[2026-03-23 11:41:10.892] [info]  Update to 3.2.0 available, download will start
+[2026-03-23 11:41:10.892] [info]  Downloading update from bruno_3.2.0_x86_64_linux.AppImage, bruno_3.2.0_amd64_linux.deb, bruno_3.2.0_x86_64_linux.rpm
+[2026-03-23 11:41:11.574] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.2.0_amd64_linux.deb).
+[2026-03-23 11:41:11.574] [info]  Update to 3.2.0 downloaded
+[2026-03-23 14:35:11.508] [info]  Auto install update on quit
+[2026-03-23 14:35:11.511] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-03-23 14:35:11.512] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-03-23 14:35:11.536] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.2.0_amd64_linux.deb || apt-get install -f -y'
+[2026-03-23 14:42:36.907] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-03-23 14:42:36.911] [info]  Checking for update
+[2026-03-23 14:42:38.406] [info]  Found version 3.2.0 (url: bruno_3.2.0_x86_64_linux.AppImage, bruno_3.2.0_amd64_linux.deb, bruno_3.2.0_x86_64_linux.rpm)
+[2026-03-23 14:42:38.407] [info]  Update to 3.2.0 available, download will start
+[2026-03-23 14:42:38.407] [info]  Downloading update from bruno_3.2.0_x86_64_linux.AppImage, bruno_3.2.0_amd64_linux.deb, bruno_3.2.0_x86_64_linux.rpm
+[2026-03-23 14:42:39.196] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.2.0_amd64_linux.deb).
+[2026-03-23 14:42:39.197] [info]  Update to 3.2.0 downloaded
+[2026-03-23 15:25:33.069] [info]  Auto install update on quit
+[2026-03-23 15:25:33.072] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-03-23 15:25:33.073] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-03-23 15:25:33.097] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.2.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 15:10:48.824] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 15:10:48.829] [info]  Checking for update
+[2026-04-30 15:10:49.817] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 15:10:49.818] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 15:10:49.818] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 15:10:49.825] [info]  Cached update sha512 checksum doesn't match the latest available update. New update must be downloaded. Cached: U6OYuD6HpEFVZgC2ILeWPPCENLFmOFVfiCSJEwo0MCqZFCxa1xt28zdL+Y60DkShKE6d52faLOc+j7Ix3nuf2w==, expected: HOsxOKFcgB1PLbrIwGRFrEl6ZaY+KGnX62QFqirMA4jqhYUukwdRSu1KH+JDKatPv5ei54F47a3IOsXzjAGv/w==. Directory for cached update will be cleaned
+[2026-04-30 15:10:59.337] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 15:10:59.341] [info]  Checking for update
+[2026-04-30 15:11:00.334] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 15:11:00.334] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 15:11:00.335] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 15:11:04.230] [info]  New version 3.3.0 has been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb
+[2026-04-30 15:11:04.233] [info]  Update to 3.3.0 downloaded
+[2026-04-30 17:02:26.629] [info]  Auto install update on quit
+[2026-04-30 17:02:26.630] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-04-30 17:02:26.630] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-04-30 17:02:26.652] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 17:02:39.392] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 17:02:39.395] [info]  Checking for update
+[2026-04-30 17:02:41.040] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 17:02:41.040] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 17:02:41.041] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 17:02:41.871] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-04-30 17:02:41.872] [info]  Update to 3.3.0 downloaded
+[2026-04-30 17:02:42.352] [info]  Auto install update on quit
+[2026-04-30 17:02:42.352] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-04-30 17:02:42.353] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-04-30 17:02:42.375] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 17:02:54.510] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 17:02:54.513] [info]  Checking for update
+[2026-04-30 17:02:56.584] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 17:02:56.585] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 17:02:56.586] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 17:02:56.934] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-04-30 17:02:56.935] [info]  Update to 3.3.0 downloaded
+[2026-04-30 17:06:09.088] [info]  Auto install update on quit
+[2026-04-30 17:06:09.088] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-04-30 17:06:09.089] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-04-30 17:06:09.104] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 17:06:35.155] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 17:06:35.159] [info]  Checking for update
+[2026-04-30 17:06:36.270] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 17:06:36.270] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 17:06:36.270] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 17:06:37.158] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-04-30 17:06:37.159] [info]  Update to 3.3.0 downloaded
+[2026-04-30 17:08:30.649] [info]  Auto install update on quit
+[2026-04-30 17:08:30.651] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-04-30 17:08:30.651] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-04-30 17:08:30.677] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 17:11:49.645] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 17:11:49.648] [info]  Checking for update
+[2026-04-30 17:11:50.834] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 17:11:50.834] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 17:11:50.835] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 17:11:51.214] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-04-30 17:11:51.215] [info]  Update to 3.3.0 downloaded
+[2026-04-30 17:17:01.981] [info]  Auto install update on quit
+[2026-04-30 17:17:01.983] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-04-30 17:17:01.983] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-04-30 17:17:02.001] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 17:17:05.819] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 17:17:05.822] [info]  Checking for update
+[2026-04-30 17:17:06.992] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 17:17:06.992] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 17:17:06.993] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 17:17:07.663] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-04-30 17:17:07.664] [info]  Update to 3.3.0 downloaded
+[2026-04-30 17:19:33.985] [info]  Auto install update on quit
+[2026-04-30 17:19:33.985] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-04-30 17:19:33.986] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-04-30 17:19:34.002] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 17:19:39.129] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 17:19:39.131] [info]  Checking for update
+[2026-04-30 17:19:40.352] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 17:19:40.353] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 17:19:40.353] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 17:19:41.488] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-04-30 17:19:41.490] [info]  Update to 3.3.0 downloaded
+[2026-04-30 18:22:13.565] [info]  Auto install update on quit
+[2026-04-30 18:22:13.566] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-04-30 18:22:13.566] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-04-30 18:22:13.582] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 18:22:25.744] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 18:22:25.747] [info]  Checking for update
+[2026-04-30 18:22:27.022] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 18:22:27.022] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 18:22:27.022] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 18:22:27.969] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-04-30 18:22:27.970] [info]  Update to 3.3.0 downloaded
+[2026-04-30 18:25:31.002] [info]  Auto install update on quit
+[2026-04-30 18:25:31.003] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-04-30 18:25:31.004] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-04-30 18:25:31.019] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-04-30 18:25:34.950] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-04-30 18:25:34.953] [info]  Checking for update
+[2026-04-30 18:25:36.474] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-04-30 18:25:36.475] [info]  Update to 3.3.0 available, download will start
+[2026-04-30 18:25:36.475] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-04-30 18:25:37.133] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-04-30 18:25:37.133] [info]  Update to 3.3.0 downloaded
+[2026-05-04 09:39:41.331] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-05-04 09:39:41.335] [info]  Checking for update
+[2026-05-04 09:39:42.560] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-05-04 09:39:42.561] [info]  Update to 3.3.0 available, download will start
+[2026-05-04 09:39:42.561] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-05-04 09:39:43.475] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-05-04 09:39:43.476] [info]  Update to 3.3.0 downloaded
+[2026-05-04 12:39:25.751] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-05-04 12:39:25.756] [info]  Checking for update
+[2026-05-04 12:39:26.904] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-05-04 12:39:26.905] [info]  Update to 3.3.0 available, download will start
+[2026-05-04 12:39:26.906] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-05-04 12:39:27.649] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-05-04 12:39:27.650] [info]  Update to 3.3.0 downloaded
+[2026-05-04 19:31:04.473] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-05-04 19:31:04.478] [info]  Checking for update
+[2026-05-04 19:31:05.416] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-05-04 19:31:05.417] [info]  Update to 3.3.0 available, download will start
+[2026-05-04 19:31:05.417] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-05-04 19:31:06.576] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-05-04 19:31:06.577] [info]  Update to 3.3.0 downloaded
+[2026-05-05 00:13:34.927] [info]  Auto install update on quit
+[2026-05-05 00:13:34.928] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-05-05 00:13:34.929] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-05-05 00:13:34.945] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-05-05 00:13:41.488] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-05-05 00:13:41.492] [info]  Checking for update
+[2026-05-05 00:13:44.392] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-05-05 00:13:44.393] [info]  Update to 3.3.0 available, download will start
+[2026-05-05 00:13:44.394] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-05-05 00:13:45.195] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-05-05 00:13:45.196] [info]  Update to 3.3.0 downloaded
+[2026-05-05 01:15:42.600] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-05-05 01:15:42.606] [info]  Checking for update
+[2026-05-05 01:15:45.785] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-05-05 01:15:45.785] [info]  Update to 3.3.0 available, download will start
+[2026-05-05 01:15:45.786] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-05-05 01:15:46.874] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-05-05 01:15:46.875] [info]  Update to 3.3.0 downloaded
+[2026-05-05 20:06:03.473] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-05-05 20:06:03.476] [info]  Checking for update
+[2026-05-05 20:06:04.445] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-05-05 20:06:04.445] [info]  Update to 3.3.0 available, download will start
+[2026-05-05 20:06:04.445] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-05-05 20:06:05.143] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-05-05 20:06:05.144] [info]  Update to 3.3.0 downloaded
+[2026-05-05 20:33:55.120] [info]  Auto install update on quit
+[2026-05-05 20:33:55.120] [info]  Install: isSilent: true, isForceRunAfter: false
+[2026-05-05 20:33:55.121] [info]  Executing: which gksudo || which kdesudo || which pkexec || which beesu with args: 
+[2026-05-05 20:33:55.129] [info]  Executing: /usr/bin/pkexec --disable-internal-agent with args: /bin/bash,-c,'dpkg -i /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb || apt-get install -f -y'
+[2026-05-05 20:33:58.393] [info]  AutoUpdater configured for linux x64 (using latest.yml)
+[2026-05-05 20:33:58.395] [info]  Checking for update
+[2026-05-05 20:34:01.141] [info]  Found version 3.3.0 (url: bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm)
+[2026-05-05 20:34:01.142] [info]  Update to 3.3.0 available, download will start
+[2026-05-05 20:34:01.142] [info]  Downloading update from bruno_3.3.0_x86_64_linux.AppImage, bruno_3.3.0_amd64_linux.deb, bruno_3.3.0_x86_64_linux.rpm
+[2026-05-05 20:34:01.824] [info]  Update has already been downloaded to /home/hector/.cache/bruno-updater/pending/bruno_3.3.0_amd64_linux.deb).
+[2026-05-05 20:34:01.825] [info]  Update to 3.3.0 downloaded
