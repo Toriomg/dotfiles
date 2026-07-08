@@ -7,11 +7,11 @@
     "clock",
     "custom/pacman",
     "group/expand"
-],
-"modules-center": [
+  ],
+  "modules-center": [
     "hyprland/workspaces"
-],
-"modules-right": [
+  ],
+  "modules-right": [
     "tray",
     "hyprland/language",
     "bluetooth",
@@ -123,16 +123,11 @@
   "group/expand": {
     "orientation": "horizontal",
     "modules": [
-      "custom/endpoint",
       "temperature",
       "cpu",
       "memory",
       "custom/gpu-nvidia"
     ]
-  },
-  "custom/endpoint": {
-    "format": "|",
-    "tooltip": false
   },
   "cpu": {
     "format": "  {usage}%",
