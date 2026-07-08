@@ -1,6 +1,7 @@
 @import url('../../.cache/wal/colors-waybar.css');
 
 
+
 * {
     font-size: 15px;
     font-weight: 700;
@@ -16,23 +17,21 @@ window#waybar {
 
 
 .modules-left {
-    padding: 7px;
+    background: transparent;
     margin: 10 0 0 10;
-    border-radius: 16px;
-    background: alpha(@background, .65);
 }
 
 .modules-center {
     padding: 7px;
     margin: 10 0 0 0;
-    border-radius: 16px;
+    border-radius: 999px;
     background: alpha(@background, .65);
 }
 
 .modules-right {
     padding: 7px;
     margin: 10 10 0 0;
-    border-radius: 16px;
+    border-radius: 99px;
     background: alpha(@background, .65);
 }
 
@@ -40,6 +39,14 @@ tooltip {
     background: @background;
     color: @color7;
 }
+
+.modules-left > widget > * {
+    background-color: alpha(@background, .65); /* Obliga a GTK a pintar el fondo en grupos */
+    border-radius: 99px;
+    padding: 7px;
+    margin-right: 5px; /* Separación entre píldoras */
+}
+
 
 #backlight:hover
 #clock:hover,
@@ -61,7 +68,7 @@ tooltip {
 }
 
 #custom-notification {
-    padding: 0px 5px;
+    padding: 0 15 0 10;
     transition: all .3s ease;
     color: @color7;
 }
