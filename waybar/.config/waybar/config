@@ -4,39 +4,88 @@
   "reload_style_on_change": true,
   "modules-left": [
     "custom/notification",
-    "clock",
-    "custom/pacman",
-    "group/expand"
+    "hyprland/workspaces",
+    "hyprland/window"
   ],
   "modules-center": [
-    "hyprland/workspaces"
+    "clock"
   ],
   "modules-right": [
     "tray",
-    "hyprland/language",
-    "bluetooth",
-    "network",
-    "pulseaudio",
-    "battery",
-    "backlight",
-    "power-profiles-daemon"
+    "custom/pacman",
+    "group/expand",
+    "group/connectivity",
+    "group/audio",
+    "power-profiles-daemon",
+    "hyprland/language"
   ],
   "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "active": "",
-      "default": "",
-      "empty": ""
-    },
+    "format": "{name}",
+    "on-click": "activate",
     "persistent-workspaces": {
       "*": [
         1,
         2,
         3,
         4,
-        5
+        5,
+        6
       ]
     }
+  },
+  "group/connectivity": {
+    "orientation": "horizontal",
+    "modules": [
+      "network",
+      "bluetooth"
+    ]
+  },
+  "group/audio": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio"
+    ]
+  },
+  "group/power": {
+    "orientation": "horizontal",
+    "modules": [
+      "backlight",
+      "battery",
+      "power-profiles-daemon"
+    ]
+  },
+  "group/expand": {
+    "orientation": "horizontal",
+    "modules": [
+      "temperature",
+      "cpu",
+      "memory",
+      "custom/gpu-nvidia"
+    ]
+  },
+  "group/power-profiles": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "power-profiles-daemon",
+      "custom/power-saver",
+      "custom/balanced",
+      "custom/performance"
+    ]
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "separate-outputs": true,
+    "max-length": 35
+  },
+  "custom/colorpicker": {
+    "format": "",
+    "on-click": "hyprpicker -a",
+    "tooltip": true,
+    "tooltip-format": "Seleccionar color"
   },
   "custom/notification": {
     "tooltip": false,
@@ -120,15 +169,6 @@
     "exec": "checkupdates | wc -l",
     "on-click": "kitty sh -c 'sudo pacman -Syu; echo Done - Press enter; read'"
   },
-  "group/expand": {
-    "orientation": "horizontal",
-    "modules": [
-      "temperature",
-      "cpu",
-      "memory",
-      "custom/gpu-nvidia"
-    ]
-  },
   "cpu": {
     "format": "  {usage}%",
     "interval": 2
@@ -153,16 +193,6 @@
     "icon-size": 15,
     "spacing": 10
   },
-  "power-profiles-daemon": {
-    "format": "{icon} ",
-    "tooltip-format": "Perfil: {profile}",
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
-    }
-  },
   "hyprland/language": {
     "format": "󰌌  {}",
     "format-en": "US",
@@ -178,5 +208,17 @@
     "tooltip-format": "GPU NVIDIA\nUso: {essid}%",
     "on-click": "kitty --hold nvidia-smi",
     "on-click-right": "kitty nvtop"
+  },
+  "custom/power-saver": {
+    "format": "",
+    "on-click": "powerprofilesctl set power-saver"
+  },
+  "custom/balanced": {
+    "format": "",
+    "on-click": "powerprofilesctl set balanced"
+  },
+  "custom/performance": {
+    "format": "",
+    "on-click": "powerprofilesctl set performance"
   }
 }

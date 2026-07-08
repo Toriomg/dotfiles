@@ -24,8 +24,7 @@ tooltip {
    2. CONTENEDORES PRINCIPALES (Layout)
    ===================================================================== */
 
-.modules-center,
-.modules-right {
+.modules-center {
   padding: 7px;
   border-radius: 99px;
   background: alpha(@background, 0.65);
@@ -41,13 +40,15 @@ tooltip {
   margin-right: 10px;
 }
 
+.modules-right,
 .modules-left {
   background: transparent;
   margin: 10px 0 0 10px;
 }
 
 /* Píldoras individuales del bloque izquierdo */
-.modules-left > widget > * {
+.modules-left > widget > *,
+.modules-right > widget > * {
   background-color: alpha(@background, 0.65);
   border-radius: 99px;
   padding: 7px;
@@ -75,6 +76,12 @@ widget > *:hover {
 
 #custom-notification {
   padding: 0 15px 0 10px; /* Padding distinto al general */
+  background-color: @color9;
+  color: @color7;
+}
+#custom-notification:hover {
+  color: @color9;
+  background-color: @color7;
 }
 
 #tray menu *,
@@ -89,36 +96,36 @@ widget > *:hover {
    ===================================================================== */
 #workspaces button {
   all: unset;
-  padding: 0px 5px;
-  color: alpha(@color9, 0.4);
+  padding: 0px 5.5px;
+  margin: 0px 2px;
+  border-radius: 99px;
+  color: @color9;
   transition: all 0.2s ease;
 }
 
 #workspaces button:hover {
-  color: rgba(0, 0, 0, 0);
-  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
-  transition: all 1s ease;
+  background: alpha(@foreground, 0.1); /* Ligero fondo al pasar el mouse */
+  color: @color7;
+  transition: all 0.3s ease;
 }
 
 #workspaces button.active {
-  color: @color9;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  background: alpha(@color9, 0.5); /* Fondo sutil para indicar actividad */
+  color: @color7; /* Color de acento para el número activo */
+  font-weight: 800;
 }
 
 #workspaces button.empty {
-  color: rgba(0, 0, 0, 0);
-  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
-}
-
-#workspaces button.empty:hover {
-  color: rgba(0, 0, 0, 0);
-  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
-  transition: all 1s ease;
+  color: alpha(@color7, 0.2);
 }
 
 #workspaces button.empty.active {
   color: @color7;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#workspaces button.urgent {
+  color: #f53c3c; /* Color para cuando hay una notificación en ese workspace */
 }
 
 /* =====================================================================
