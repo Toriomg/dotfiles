@@ -2,6 +2,23 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Design philosophy
+
+The aesthetic target is **Apple-inspired minimalism**: clean, uncluttered, intentional. When making visual changes, apply these principles:
+
+- **Whitespace over decoration.** Breathing room between elements is preferred over filling space with icons, labels, or effects.
+- **Two fonts only.** `SF Pro Text` for UI surfaces (waybar, hyprlock, wofi, wlogout). `CodeNewRoman Nerd Font Propo` for terminal contexts (kitty, swaync notifications, btop) where Nerd Font icons are needed.
+- **Three color roles**, sourced from pywal — never hardcode colors except for semantic states:
+  - `$color7` / `@color7` — primary text and foreground content
+  - `$color8` / `@color8` — secondary/muted text, empty states, de-emphasized elements
+  - `$color9` / `@color9` — single accent: active states, borders, highlights
+  - Hardcoded `rgba(220, 70, 70, 1.0)` is reserved for error/warning only (caps lock, wrong password, critical battery)
+- **Pill shape for interactive elements.** `border-radius: 99px` in CSS, `rounding = 99` in hyprlock. Windows use `rounding = 10`.
+- **Semi-transparent backgrounds.** Surfaces sit at `alpha(@background, 0.65)` or similar — never fully opaque, never fully transparent.
+- **No shadows.** Shadow is disabled in hyprland decoration and hyprlock labels.
+- **Blur is structural, not decorative.** Background blur (5 passes, size 3–5) provides depth without visual noise.
+- **Functional elements only.** If a label or widget doesn't communicate state or enable action, remove it. The hyprlock username greeting ("Hello, hector") was removed for this reason.
+
 ## Repo structure
 
 Each top-level directory is a **GNU Stow package**. Its internal tree mirrors `$HOME`, so `stow -t $HOME <pkg>` creates the correct symlinks. Example: `waybar/.config/waybar/style.css` → `~/.config/waybar/style.css`.
