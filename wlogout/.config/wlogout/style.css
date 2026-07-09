@@ -20,13 +20,13 @@ button {
 /* ── Column margins ───────────────────────────────────────────────────── */
 
 #lock,
-#suspend,
-#logout {
+#shutdown,
+#suspend {
   margin: 2px 2px 2px 300px;
 }
-#shutdown,
-#hibernate,
-#reboot {
+#reboot,
+#logout,
+#hibernate {
   margin: 2px 300px 2px 2px;
 }
 
@@ -34,10 +34,10 @@ button {
 
 #lock:focus,
 #suspend:focus,
-#logout:focus {
+#shutdown:focus {
   margin: 2px 2px 2px 200px;
 }
-#shutdown:focus,
+#logout:focus,
 #hibernate:focus,
 #reboot:focus {
   margin: 2px 200px 2px 2px;
