@@ -7,7 +7,7 @@
     transition: 200ms cubic-bezier(0, 0, 1, 1);
 }
 button {
-    font-family: 'CodeNewRoman Nerd Font Mono';
+    font-family: 'SF Pro Text';
     background-color: alpha(@color9,1);
     border-radius: 5px;
     background-repeat: no-repeat;

@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 The aesthetic target is **Apple-inspired minimalism**: clean, uncluttered, intentional. When making visual changes, apply these principles:
 
 - **Whitespace over decoration.** Breathing room between elements is preferred over filling space with icons, labels, or effects.
-- **Two fonts only.** `SF Pro Text` for UI surfaces (waybar, hyprlock, wofi, wlogout). `CodeNewRoman Nerd Font Propo` for terminal contexts (kitty, swaync notifications, btop) where Nerd Font icons are needed.
+- **Two fonts only.** `SF Pro Text` for all text surfaces where no icon glyphs are needed (hyprlock, wofi, wlogout, swaync notification text). `JetBrains Mono Nerd Font` wherever Nerd Font icon glyphs are rendered — waybar modules, swaync buttons-grid. In CSS, declare both as a fallback stack: `"SF Pro Text", "JetBrains Mono Nerd Font"`.
 - **Three color roles**, sourced from pywal — never hardcode colors except for semantic states:
   - `$color7` / `@color7` — primary text and foreground content
   - `$color8` / `@color8` — secondary/muted text, empty states, de-emphasized elements
