@@ -1,0 +1,53 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
+window#osd {
+    border-radius: 999px;
+    border: none;
+    background: alpha(@background, 0.82);
+}
+
+window#osd #container {
+    margin: 12px 20px;
+}
+
+window#osd image,
+window#osd label {
+    color: @color7;
+}
+
+window#osd progressbar:disabled,
+window#osd image:disabled {
+    opacity: 0.4;
+}
+
+window#osd progressbar,
+window#osd segmentedprogress {
+    min-height: 4px;
+    border-radius: 999px;
+    background: transparent;
+    border: none;
+}
+
+window#osd trough,
+window#osd segment {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+    background: alpha(@color7, 0.18);
+}
+
+window#osd progress,
+window#osd segment.active {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+    background: @color9;
+}
+
+window#osd segment {
+    margin-left: 6px;
+}
+
+window#osd segment:first-child {
+    margin-left: 0;
+}

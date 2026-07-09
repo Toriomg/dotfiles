@@ -1,0 +1,5 @@
+[server]
+top_margin = 0.9
+show_percentage = true
+min_brightness = 5
+keyboard_backlight = true

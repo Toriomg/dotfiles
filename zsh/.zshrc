@@ -52,6 +52,9 @@ alias n="nvim"
 alias cd="z"
 alias vpn="sudo -E gpclient connect --browser default myvpn.uc3m.es"
 
+alias c="claude"
+alias cc="claude --continue"
+alias cr="claude --resume"
 # 6. Función lt mejorada (con niveles dinámicos)
 lt() {
   local nivel="${1:-2}"
