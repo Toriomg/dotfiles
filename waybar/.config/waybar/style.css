@@ -31,19 +31,18 @@ tooltip {
   margin-top: 10px;
 }
 
-.modules-center {
-  margin-left: 0;
-  margin-right: 0;
+.modules-left {
+  margin-left: 10px;
 }
 
 .modules-right {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .modules-right,
 .modules-left {
   background: transparent;
-  margin: 10px 0 0 10px;
+  margin-top: 10px;
 }
 
 /* Píldoras individuales del bloque izquierdo */

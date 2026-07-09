@@ -5,23 +5,22 @@
   "modules-left": [
     "custom/notification",
     "hyprland/workspaces",
-    "hyprland/window"
+    "custom/pacman",
+    "tray"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
-    "tray",
-    "custom/pacman",
     "group/expand",
-    "group/connectivity",
-    "group/audio",
-    "group/power",
-    "hyprland/language"
+    "group/tools",
+    "group/misc",
+    "group/power"
   ],
   "hyprland/workspaces": {
     "format": "{name}",
     "on-click": "activate",
+    "all-outputs": true,
     "persistent-workspaces": {
       "*": [
         1,
@@ -33,48 +32,43 @@
       ]
     }
   },
-  "group/connectivity": {
+  "group/misc": {
     "orientation": "horizontal",
     "modules": [
       "network",
-      "bluetooth"
-    ]
-  },
-  "group/audio": {
-    "orientation": "horizontal",
-    "modules": [
-      "pulseaudio"
+      "bluetooth",
+      "pulseaudio",
+      "backlight"
     ]
   },
   "group/expand": {
     "orientation": "horizontal",
     "modules": [
+      "custom/expand-icon",
       "temperature",
       "cpu",
       "memory",
       "custom/gpu-nvidia"
-    ]
+    ],
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "not-first",
+      "transition-left-to-right": true
+    }
   },
   "group/power": {
     "orientation": "horizontal",
     "modules": [
-      "backlight",
-      "battery",
-      "group/power-profiles"
+      "power-profiles-daemon",
+      "battery"
     ]
   },
-  "group/power-profiles": {
+  "group/tools": {
     "orientation": "horizontal",
     "modules": [
-      "custom/power-saver",
-      "custom/balanced",
-      "custom/performance"
+      "custom/colorpicker",
+      "hyprland/language"
     ]
-  },
-  "hyprland/window": {
-    "format": "{}",
-    "separate-outputs": true,
-    "max-length": 35
   },
   "power-profiles-daemon": {
     "format": "{icon}",
@@ -86,7 +80,7 @@
     }
   },
   "custom/colorpicker": {
-    "format": "",
+    "format": " ",
     "on-click": "hyprpicker -a",
     "tooltip": true,
     "tooltip-format": "Seleccionar color"
@@ -97,29 +91,61 @@
     "on-click": "swaync-client -t -sw",
     "escape": true
   },
+  "custom/expand-icon": {
+    "format": "",
+    "tooltip": false
+  },
   "clock": {
-    "format": "{:%a %d - %H:%M}",
-    "interval": 60,
-    "tooltip-format": "<tt>{calendar}</tt>"
+    "format": "  {:%H:%M}",
+    "format-alt": "󰃭  {:%A, %d %B, %Y}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6666'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
   },
   "network": {
     "format-wifi": " ",
     "format-ethernet": "󰤭 ",
     "format-disconnected": "󰤫 ",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+    "tooltip-format": "Red: {ifname}\nIP: {ipaddr}\nEstado: {essid} ({signalStrength}%)",
+    "tooltip-format-wifi": "󰤨  {essid}\n󰗊  {frequency} MHz\n󰐈  {signalStrength}%\n󰇚  {bandwidthDownBits}\n󰇓  {bandwidthUpBits}\nIP {ipaddr}",
+    "tooltip-format-ethernet": "󰈀  {ifname}\n󰇚  {bandwidthDownBits}\n󰇓  {bandwidthUpBits}",
+    "tooltip-format-disconnected": "󰤮  Desconectado",
     "on-click": "kitty nmtui"
   },
   "bluetooth": {
     "format-on": "󰂯",
     "format-off": "󰂲",
+    "format-disabled": "󰂲",
     "format-connected": "󰂱",
     "format-connected-battery": "󰂱 {device_battery_percentage}%",
-    "on-click-right": "blueman-manager"
+    "tooltip-format": "{controller_alias}\n{status}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": " {device_alias}",
+    "tooltip-format-enumerate-connected-battery": " {device_alias} ({device_battery_percentage}%)",
+    "on-click-right": "rfkill toggle bluetooth",
+    "on-click": "blueman-manager"
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "󰂰  {volume}%",
-    "format-muted": "󰝟  Mut",
+    "format": "{icon}",
+    "format-bluetooth": "󰂰",
+    "format-muted": "󰝟",
     "format-icons": {
       "headphone": "",
       "hands-free": "󰂰",
@@ -136,7 +162,7 @@
     "scroll-step": 1,
     "on-click": "pavucontrol",
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "tooltip-format": "{icon} {desc} | {volume}%"
+    "tooltip-format": "Volumen: {volume}%\n{desc}"
   },
   "battery": {
     "interval": 10,
@@ -157,13 +183,14 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{icon}  {percent}%",
+    "format": "{icon} ",
     "format-icons": [
       "󰃞",
       "󰃝",
       "󰃟",
       "󰃠"
     ],
+    "tooltip-format": "Brillo: {percent}%",
     "on-scroll-up": "brightnessctl set 10%+",
     "on-scroll-down": "brightnessctl set 10%-"
   },
@@ -212,17 +239,5 @@
     "tooltip-format": "GPU NVIDIA\nUso: {essid}%",
     "on-click": "kitty --hold nvidia-smi",
     "on-click-right": "kitty nvtop"
-  },
-  "custom/power-saver": {
-    "format": "",
-    "on-click": "powerprofilesctl set power-saver"
-  },
-  "custom/balanced": {
-    "format": "",
-    "on-click": "powerprofilesctl set balanced"
-  },
-  "custom/performance": {
-    "format": "",
-    "on-click": "powerprofilesctl set performance"
   }
 }
