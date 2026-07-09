@@ -16,7 +16,7 @@
     "group/expand",
     "group/connectivity",
     "group/audio",
-    "power-profiles-daemon",
+    "group/power",
     "hyprland/language"
   ],
   "hyprland/workspaces": {
@@ -46,14 +46,6 @@
       "pulseaudio"
     ]
   },
-  "group/power": {
-    "orientation": "horizontal",
-    "modules": [
-      "backlight",
-      "battery",
-      "power-profiles-daemon"
-    ]
-  },
   "group/expand": {
     "orientation": "horizontal",
     "modules": [
@@ -63,14 +55,17 @@
       "custom/gpu-nvidia"
     ]
   },
+  "group/power": {
+    "orientation": "horizontal",
+    "modules": [
+      "backlight",
+      "battery",
+      "group/power-profiles"
+    ]
+  },
   "group/power-profiles": {
     "orientation": "horizontal",
-    "drawer": {
-      "transition-duration": 500,
-      "transition-left-to-right": false
-    },
     "modules": [
-      "power-profiles-daemon",
       "custom/power-saver",
       "custom/balanced",
       "custom/performance"
@@ -80,6 +75,15 @@
     "format": "{}",
     "separate-outputs": true,
     "max-length": 35
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": " ",
+      "performance": " ",
+      "balanced": " ",
+      "power-saver": " "
+    }
   },
   "custom/colorpicker": {
     "format": "",
@@ -99,7 +103,7 @@
     "tooltip-format": "<tt>{calendar}</tt>"
   },
   "network": {
-    "format-wifi": "   {essid:.7}.",
+    "format-wifi": " ",
     "format-ethernet": "󰤭 ",
     "format-disconnected": "󰤫 ",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)",
