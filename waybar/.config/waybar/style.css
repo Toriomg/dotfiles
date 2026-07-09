@@ -1,4 +1,4 @@
-@import url("../../.cache/wal/colors-waybar.css");
+@import url("colors-waybar.css");
 
 /* =====================================================================
    1. GLOBALES Y RESET
@@ -95,7 +95,7 @@ widget > *:hover {
    ===================================================================== */
 #workspaces button {
   all: unset;
-  padding: 0px 5.5px;
+  padding: 0px 8px;
   margin: 0px 2px;
   border-radius: 99px;
   color: @color9;

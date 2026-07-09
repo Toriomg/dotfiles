@@ -38,6 +38,7 @@
       "network",
       "bluetooth",
       "pulseaudio",
+      "pulseaudio#microphone",
       "backlight"
     ]
   },
@@ -48,7 +49,8 @@
       "temperature",
       "cpu",
       "memory",
-      "custom/gpu-nvidia"
+      "custom/gpu-nvidia",
+      "disk"
     ],
     "drawer": {
       "transition-duration": 500,
@@ -67,6 +69,7 @@
     "orientation": "horizontal",
     "modules": [
       "custom/colorpicker",
+      "custom/screenshot",
       "hyprland/language"
     ]
   },
@@ -96,8 +99,8 @@
     "tooltip": false
   },
   "clock": {
-    "format": "  {:%H:%M}",
-    "format-alt": "󰃭  {:%A, %d %B, %Y}",
+    "format": "{:%H:%M}",
+    "format-alt": "{:%A, %d %B, %Y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "month",
@@ -163,6 +166,23 @@
     "on-click": "pavucontrol",
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "tooltip-format": "Volumen: {volume}%\n{desc}"
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": "",
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-click-right": "pavucontrol",
+    "scroll-step": 5,
+    "tooltip-format": "Micrófono: {source_desc}\nVolumen: {source_volume}%",
+    "format-icons": {
+      "headphone": "",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    }
   },
   "battery": {
     "interval": 10,
@@ -239,5 +259,19 @@
     "tooltip-format": "GPU NVIDIA\nUso: {essid}%",
     "on-click": "kitty --hold nvidia-smi",
     "on-click-right": "kitty nvtop"
+  },
+  "disk": {
+    "interval": 30,
+    "format": "󰋊 {percentage_used}%",
+    "path": "/",
+    "tooltip": true,
+    "tooltip-format": "Disco: {path}\nUsado: {used} de {total}\nLibre: {free}"
+  },
+  "custom/screenshot": {
+    "format": " ",
+    "on-click": "hyprshot -m region",
+    "on-click-right": "hyprshot -m output",
+    "tooltip": true,
+    "tooltip-format": "Click izq: Captura región\nClick der: Captura pantalla completa"
   }
 }
