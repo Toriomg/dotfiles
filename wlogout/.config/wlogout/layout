@@ -4,15 +4,24 @@
     "keybind" : "l"
 }
 {
-    "label" : "reboot",
-    "action" : "systemctl reboot || loginctl reboot",
-    "keybind" : "r"
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "keybind" : "u"
 }
-
 {
     "label" : "logout",
     "action" : "pkill Hyprland || pkill sway || pkill niri || loginctl terminate-user $USER",
     "keybind" : "e"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot || loginctl reboot",
+    "keybind" : "r"
+}
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "keybind" : "h"
 }
 {
     "label" : "shutdown",
