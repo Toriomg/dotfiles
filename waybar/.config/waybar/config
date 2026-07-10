@@ -49,9 +49,15 @@
     "icon-size": 14,
     "transition-duration": 250,
     "modules": [
-      { "type": "screenshare" },
-      { "type": "audio-in" },
-      { "type": "audio-out" }
+      {
+        "type": "screenshare"
+      },
+      {
+        "type": "audio-in"
+      },
+      {
+        "type": "audio-out"
+      }
     ]
   },
   "group/expand": {
@@ -300,7 +306,7 @@
     "tooltip-format": "Click izq: Captura región\nClick der: Captura pantalla completa"
   },
   "custom/claudebar": {
-    "exec": "claudebar --icon \"<span font='Font Awesome 7 Brands'>&#xe861;</span>\" --format '{weekly_pct}%'",
+    "exec": "claudebar --icon \"<span font='Font Awesome 7 Brands'>&#xe861;</span>\" --format '{session_pct}%'",
     "return-type": "json",
     "interval": 300,
     "signal": 13,
