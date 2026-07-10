@@ -6,6 +6,7 @@
     "custom/notification",
     "hyprland/workspaces",
     "custom/pacman",
+    "custom/claudebar",
     "tray"
   ],
   "modules-center": [
@@ -273,5 +274,13 @@
     "on-click-right": "hyprshot -m output",
     "tooltip": true,
     "tooltip-format": "Click izq: Captura región\nClick der: Captura pantalla completa"
+  },
+  "custom/claudebar": {
+    "exec": "claudebar --icon \"<span font='Font Awesome 7 Brands'>&#xe861;</span>\" --format '{weekly_pct}%'",
+    "return-type": "json",
+    "interval": 300,
+    "signal": 13,
+    "tooltip": true,
+    "on-click": "xdg-open https://claude.ai/settings/usage"
   }
 }
