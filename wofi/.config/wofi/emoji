@@ -1,11 +1,9 @@
 [config]
-allow_images=false
-width=500
-prompt=Search
-height=400
-term=kitty
+width=560
+height=420
+prompt=
 hide_scroll=true
-print_command=true
+hide_search=true
 insensitive=true
-columns=1
+columns=10
 no_actions=true

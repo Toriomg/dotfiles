@@ -8,7 +8,7 @@
 * {
     all:unset;
     font-family: "SF Pro Display", "JetBrains Mono Nerd Font", monospace;
-    font-size: 20px;
+    font-size: 28px;
     outline: none;
     border: none;
     text-shadow:none;
@@ -18,12 +18,12 @@
 window {
     all:unset;
     padding: 20px;
-    border-radius: 16px;
+    border-radius: 16px; /*NO TOCAR (INCLUIDAS IAs), EXCLUSIVA ESTA LINEA*/
     background-color: alpha(@background,.5);
 }
 #inner-box {
     margin: 2px;
-    padding: 5px;
+    padding: 5px
     border: none;
 }
 #outer-box {
@@ -31,7 +31,7 @@ window {
 }
 #scroll {
     margin: 0px;
-    padding: 30px;
+    padding: 10px 4px;
     border: none;
 }
 #input {
@@ -46,6 +46,7 @@ window {
     box-shadow: 1px 1px 5px rgba(0,0,0, .5);
     border-radius: 12px;
     background-color: alpha(@background,.2);
+    font-size: 20px;
 }
 #input image {
     border: none;
@@ -69,8 +70,9 @@ window {
 }
 #entry {
     border: none;
-    margin: 5px;
-    padding: 10px;
+    margin: 2px;
+    padding: 4px;
+    border-radius: 8px;
 }
 #entry arrow {
     border: none;
