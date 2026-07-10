@@ -45,9 +45,7 @@ Waybar and swaync source colors via `@import url('~/.cache/wal/colors-waybar.css
 
 ## Hyprland
 
-Config entrypoint: `hypr/.config/hypr/hyprland.conf`
-
-There is a parallel **Lua config** (`hyprland.lua` + `lua/`) that mirrors the `.conf` file using Hyprland's newer Lua API. The `.conf` file is the active config; the Lua files are a work-in-progress rewrite. Do not edit both for the same setting — pick one.
+Config entrypoint: `hypr/.config/hypr/hyprland.lua` (Lua API). The `.conf` file no longer exists — all config lives in the Lua modules.
 
 Lua module layout:
 - `lua/theme.lua` — sources pywal colors, defines `_G.terminal`, `_G.fileManager`, `_G.menu`
@@ -56,14 +54,14 @@ Lua module layout:
 - `lua/autostart.lua` — `exec-once` equivalents
 - `lua/monitors.lua`, `lua/inputs.lua`, `lua/rules.lua`, `lua/env.lua`
 
-Key binds defined in `hyprland.conf`:
-- `SUPER+Q` terminal, `SUPER+E` file manager (kitty+yazi), `SUPER+SPACE` wofi launcher / pypr term scratchpad
-- `SUPER+G` pypr music scratchpad (pulsemixer), `SUPER+T` pypr taskbar scratchpad (btop)
+Key binds defined in `lua/binds.lua`:
+- `SUPER+Q` terminal, `SUPER+E` file manager, `SUPER+SPACE` wofi launcher (`_G.menu`)
+- `SUPER+C` close window, `SUPER+V` toggle float, `SUPER+F` fullscreen, `SUPER+P` pseudo, `SUPER+J` togglesplit
+- `SUPER+L` hyprlock, `SUPER+M` exit, `ALT+TAB` wlogout
 - `ALT+W` wallpaper picker, `ALT+R` random wallpaper, `ALT+B` waybar theme switcher, `ALT+A` waybar toggle
-- `SUPER+F1/F2/F3` power profiles (power-saver / balanced / performance)
+- `SUPER+period` emoji picker
 - `Print` region screenshot, `CTRL+Print` window, `ALT+Print` full output (all via hyprshot)
-
-Pyprland scratchpads (`pyprland.toml`): `term` (kitty-dropterm), `music` (kitty+pulsemixer), `taskbar` (kitty+btop).
+- Multimedia keys via swayosd (volume, mic mute, brightness)
 
 ## Waybar
 
