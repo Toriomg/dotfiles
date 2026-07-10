@@ -60,3 +60,4 @@ hl.bind("ALT + A", hl.dsp.exec_cmd("~/.config/waybar/scripts/refresh.sh"))
 hl.bind("ALT + B", hl.dsp.exec_cmd("~/.config/waybar/scripts/select.sh"))
 -- hl.bind("ALT + R", hl.dsp.exec_cmd("~/.config/swaync/refresh.sh"))
 hl.bind("ALT + R", hl.dsp.exec_cmd("~/.config/hypr/scripts/random_wallpaper.sh")) -- Usé SHIFT + R para diferenciar de la 'r' minúscula si lo prefieres
+hl.bind(mainMod .. " + period", hl.dsp.exec_cmd("~/.config/hypr/scripts/emoji.sh"))
