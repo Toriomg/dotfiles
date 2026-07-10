@@ -5,3 +5,9 @@ hl.layer_rule({
     },
     no_anim = true
 })
+
+hl.window_rule({
+    match = { class = "pavucontrol" },
+    float = true,
+    center = true,
+})

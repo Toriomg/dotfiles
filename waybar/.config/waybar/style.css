@@ -124,7 +124,39 @@ widget > *:hover {
 
 
 /* =====================================================================
-   6. BATERÍA (Lógica de estados)
+   6. PRIVACY
+   ===================================================================== */
+
+#privacy-item {
+  color: @color9;
+  margin-top: 3px;
+}
+
+#privacy-item.screenshare {
+  color: rgba(220, 70, 70, 1.0);
+}
+
+#privacy-item.audio-in {
+  color: @color9;
+}
+
+#privacy-item.audio-out {
+  color: @color8;
+}
+
+/* =====================================================================
+   7. MPRIS - ahjora no se usa
+   ===================================================================== */
+#mpris {
+  color: @color7;
+}
+
+#mpris.paused {
+  color: @color8;
+}
+
+/* =====================================================================
+   8. BATERÍA (Lógica de estados)
    ===================================================================== */
 #battery.charging {
   color: #26a65b;

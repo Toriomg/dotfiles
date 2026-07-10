@@ -36,11 +36,22 @@
   "group/misc": {
     "orientation": "horizontal",
     "modules": [
+      "privacy",
       "network",
       "bluetooth",
       "pulseaudio",
       "pulseaudio#microphone",
       "backlight"
+    ]
+  },
+  "privacy": {
+    "icon-spacing": 6,
+    "icon-size": 14,
+    "transition-duration": 250,
+    "modules": [
+      { "type": "screenshare" },
+      { "type": "audio-in" },
+      { "type": "audio-out" }
     ]
   },
   "group/expand": {
@@ -267,6 +278,19 @@
     "path": "/",
     "tooltip": true,
     "tooltip-format": "Disco: {path}\nUsado: {used} de {total}\nLibre: {free}"
+  },
+  "mpris": {
+    "format": "⏸ {title}",
+    "format-paused": "▶ {title}",
+    "format-stopped": "",
+    "max-length": 10,
+    "ellipsis": "…",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "tooltip": true,
+    "tooltip-format": "{player}\n{artist} — {title}"
   },
   "custom/screenshot": {
     "format": " ",
