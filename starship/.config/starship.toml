@@ -13,8 +13,6 @@ $git_state\
 $jobs\
 $sudo\
 $all\
-$fill\
-$time\
 $character"""
 
 [username]
@@ -272,15 +270,6 @@ deleted = '✘${count}'
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-
-[time]
-disabled = false
-format = '[$time]($style) '
-time_format = '%H:%M'
-style = 'fg:blue'
-
-[fill]
-symbol = ' '
 
 [jobs]
 symbol = '✦'
