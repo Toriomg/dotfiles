@@ -22,6 +22,7 @@ main() {
     # 3. Recargar apps
     swaync-client --reload-css
     pywalfox update
+    pkill swayosd-server; swayosd-server &
     
     # Recargar Kitty (Pywal ya lo hace si tienes el include en kitty.conf)
     # Si no lo tienes, descomenta la siguiente línea:

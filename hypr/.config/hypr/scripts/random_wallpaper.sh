@@ -42,6 +42,7 @@ wal -i "$SELECTED_WALL" --saturate 0.7
 swaync-client --reload-css
 pywalfox update 2>/dev/null
 bash ~/.config/wal/postrun
+pkill swayosd-server; swayosd-server &
 # 5. (Opcional) Copiar como fondo actual para persistencia
 cp "$SELECTED_WALL" ~/wallpapers/pywallpaper.jpg
 
