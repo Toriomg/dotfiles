@@ -16,7 +16,8 @@
     "group/expand",
     "group/tools",
     "group/misc",
-    "group/power"
+    "group/power",
+    "battery"
   ],
   "hyprland/workspaces": {
     "format": "{name}",
@@ -80,8 +81,15 @@
     "orientation": "horizontal",
     "modules": [
       "power-profiles-daemon",
-      "battery"
-    ]
+      "custom/power-performance",
+      "custom/power-balanced",
+      "custom/power-saver"
+    ],
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "power-option",
+      "transition-left-to-right": false
+    }
   },
   "group/tools": {
     "orientation": "horizontal",
@@ -98,7 +106,27 @@
       "performance": " ",
       "balanced": " ",
       "power-saver": " "
-    }
+    },
+    "tooltip": true,
+    "tooltip-format": "Perfil activo: {profile}"
+  },
+  "custom/power-performance": {
+    "format": " ",
+    "on-click": "powerprofilesctl set performance",
+    "tooltip": true,
+    "tooltip-format": "Performance"
+  },
+  "custom/power-balanced": {
+    "format": " ",
+    "on-click": "powerprofilesctl set balanced",
+    "tooltip": true,
+    "tooltip-format": "Balanced"
+  },
+  "custom/power-saver": {
+    "format": " ",
+    "on-click": "powerprofilesctl set power-saver",
+    "tooltip": true,
+    "tooltip-format": "Power Saver"
   },
   "custom/colorpicker": {
     "format": " ",
