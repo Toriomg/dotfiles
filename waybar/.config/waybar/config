@@ -16,8 +16,7 @@
     "group/expand",
     "group/tools",
     "group/misc",
-    "group/power",
-    "battery"
+    "group/power"
   ],
   "hyprland/workspaces": {
     "format": "{name}",
@@ -80,6 +79,7 @@
   "group/power": {
     "orientation": "horizontal",
     "modules": [
+      "battery",
       "power-profiles-daemon",
       "custom/power-performance",
       "custom/power-balanced",
