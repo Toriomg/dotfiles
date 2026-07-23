@@ -147,4 +147,4 @@ Symlinks mean edits are live immediately. Some apps need a reload signal:
 | Wofi / Wlogout | Stateless — picks up changes on next launch |
 
 ---
-**NOTE:** In this repo i dont maintain the git's good practices
+**NOTE:** In this repo i dont follow git's good practices
