@@ -146,5 +146,5 @@ Symlinks mean edits are live immediately. Some apps need a reload signal:
 | Kitty | `CTRL+SHIFT+F5` |
 | Wofi / Wlogout | Stateless — picks up changes on next launch |
 
-
+---
 **NOTE:** In this repo i dont maintain the git's good practices
