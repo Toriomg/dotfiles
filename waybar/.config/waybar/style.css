@@ -158,15 +158,15 @@ widget > *:hover {
 /* =====================================================================
    8. BATERÍA (Lógica de estados)
    ===================================================================== */
-#custom-power-status.charging {
+#battery.charging {
   color: #26a65b;
 }
 
-#custom-power-status.warning:not(.charging) {
+#battery.warning:not(.charging) {
   color: #ffbe61;
 }
 
-#custom-power-status.critical:not(.charging) {
+#battery.critical:not(.charging) {
   color: #f53c3c;
   animation-name: blink;
   animation-duration: 0.5s;
