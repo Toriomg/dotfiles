@@ -79,9 +79,41 @@
   "group/power": {
     "orientation": "horizontal",
     "modules": [
-      "power-profiles-daemon",
+      "group/pprofiles",
       "battery"
     ]
+  },
+  "group/pprofiles": {
+    "orientation": "horizontal",
+    "modules": [
+      "power-profiles-daemon",
+      "custom/pprofile-performance",
+      "custom/pprofile-balanced",
+      "custom/pprofile-power-saver"
+    ],
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "not-first",
+      "transition-left-to-right": false
+    }
+  },
+  "custom/pprofile-performance": {
+    "format": " ",
+    "on-click": "powerprofilesctl set performance",
+    "tooltip": true,
+    "tooltip-format": "Performance"
+  },
+  "custom/pprofile-balanced": {
+    "format": " ",
+    "on-click": "powerprofilesctl set balanced",
+    "tooltip": true,
+    "tooltip-format": "Balanced"
+  },
+  "custom/pprofile-power-saver": {
+    "format": " ",
+    "on-click": "powerprofilesctl set power-saver",
+    "tooltip": true,
+    "tooltip-format": "Power Saver"
   },
   "group/tools": {
     "orientation": "horizontal",
