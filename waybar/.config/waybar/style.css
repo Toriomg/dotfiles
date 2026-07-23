@@ -181,19 +181,3 @@ widget > *:hover {
     color: @background;
   }
 }
-
-/* =====================================================================
-   9. POWER PROFILE PICKER (Drawer options)
-   ===================================================================== */
-#custom-power-performance,
-#custom-power-balanced,
-#custom-power-saver {
-  color: @color8;
-  transition: color 0.2s ease;
-}
-
-#custom-power-performance:hover,
-#custom-power-balanced:hover,
-#custom-power-saver:hover {
-  color: @color9;
-}
