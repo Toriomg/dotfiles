@@ -305,7 +305,7 @@
     "tooltip-format": "Click izq: Captura región\nClick der: Captura pantalla completa"
   },
   "custom/claudebar": {
-    "exec": "claudebar --icon \"<span font='Font Awesome 7 Brands'>&#xe861;</span>\" --format '{session_pct}%'",
+    "exec": "claudebar --icon \"<span font='Font Awesome 7 Brands'>&#xe861;</span>\"",
     "return-type": "json",
     "interval": 300,
     "signal": 13,
