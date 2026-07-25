@@ -55,6 +55,15 @@ alias vpn="sudo -E gpclient connect --browser default myvpn.uc3m.es"
 alias c="claude"
 alias cc="claude --continue"
 alias cr="claude --resume"
+
+# Override gc del plugin git: commit sin comillas
+unalias gc 2>/dev/null
+gc()  { git commit -m "$*" }
+gcv() { git commit -v }             # el gc original, por si lo echas de menos
+gopen() {
+  local rama="${1:-main}"
+  git fetch upstream && git checkout "$rama" && git pull upstream "$rama"
+}
 # 6. Función lt mejorada (con niveles dinámicos)
 lt() {
   local nivel="${1:-2}"
