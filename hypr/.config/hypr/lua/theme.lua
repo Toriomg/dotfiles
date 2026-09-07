@@ -2,6 +2,7 @@
 _G.terminal = "kitty"
 _G.fileManager = "kitty yazi"
 _G.menu = "wofi -n"
+_G.browser = os.getenv("BROWSER") or "firefox"
 
 -- Cargar colores de Pywal (esto importa las variables $colorX al entorno de Hyprland)
 hl.config({

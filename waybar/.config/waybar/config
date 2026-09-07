@@ -20,7 +20,6 @@
   ],
   "hyprland/workspaces": {
     "format": "{name}",
-    "on-click": "activate",
     "all-outputs": true,
     "persistent-workspaces": {
       "*": [
