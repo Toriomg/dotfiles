@@ -181,3 +181,9 @@ widget > *:hover {
     color: @background;
   }
 }
+/* =====================================================================
+   9. TEMPERATURA (sale del desplegable a partir de 60 °C)
+   ===================================================================== */
+#custom-temp-hot {
+  color: @color9;
+}

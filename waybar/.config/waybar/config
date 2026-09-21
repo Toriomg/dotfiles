@@ -13,6 +13,7 @@
     "clock"
   ],
   "modules-right": [
+    "custom/temp-hot",
     "group/expand",
     "group/tools",
     "group/misc",
@@ -63,7 +64,7 @@
     "orientation": "horizontal",
     "modules": [
       "custom/expand-icon",
-      "temperature",
+      "custom/temp",
       "cpu",
       "memory",
       "custom/gpu-nvidia",
@@ -277,17 +278,15 @@
     "format": "  {percentage}%",
     "interval": 5
   },
-  "temperature": {
-    "thermal-zone": 5,
-    "critical-threshold": 75,
-    "format-critical": "{icon}{temperatureC}°C!",
-    "format": "{icon}{temperatureC}°C",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ],
-    "interval": 2
+  "custom/temp": {
+    "exec": "~/.config/waybar/scripts/temp.sh drawer",
+    "interval": 2,
+    "tooltip": false
+  },
+  "custom/temp-hot": {
+    "exec": "~/.config/waybar/scripts/temp.sh hot",
+    "interval": 2,
+    "tooltip": false
   },
   "tray": {
     "icon-size": 15,
