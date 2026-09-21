@@ -65,7 +65,7 @@
     "modules": [
       "custom/expand-icon",
       "custom/temp",
-      "cpu",
+      "custom/cpu",
       "memory",
       "custom/gpu-nvidia",
       "disk"
@@ -270,8 +270,9 @@
     "exec": "checkupdates | wc -l",
     "on-click": "kitty sh -c 'sudo pacman -Syu; echo Done - Press enter; read'"
   },
-  "cpu": {
-    "format": "  {usage}%",
+  "custom/cpu": {
+    "exec": "~/.config/waybar/scripts/cpu.sh",
+    "return-type": "json",
     "interval": 2
   },
   "memory": {
