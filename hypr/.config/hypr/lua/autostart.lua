@@ -7,6 +7,8 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("pypr")
     hl.exec_cmd("swaync-client -df")
     hl.exec_cmd("swayosd-server")
+    -- aparcado con el menú de la tecla Menú:
+    -- hl.exec_cmd("wl-paste --watch cliphist store")
     hl.exec_cmd("wlsunset -l 40.4 -L -3.7 -t 4500 -T 6500")
     hl.exec_cmd("pactl set-sink-mute @DEFAULT_SINK@ 0")
     hl.exec_cmd("hyprctl setcursor Adwaita 24")

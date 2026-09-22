@@ -62,3 +62,10 @@ hl.bind("ALT + B", hl.dsp.exec_cmd("~/.config/waybar/scripts/select.sh"))
 -- hl.bind("ALT + R", hl.dsp.exec_cmd("~/.config/swaync/refresh.sh"))
 hl.bind("ALT + R", hl.dsp.exec_cmd("~/.config/hypr/scripts/random_wallpaper.sh")) -- Usé SHIFT + R para diferenciar de la 'r' minúscula si lo prefieres
 hl.bind(mainMod .. " + period", hl.dsp.exec_cmd("~/.config/hypr/scripts/emoji.sh"))
+
+-- APARCADO: menú de la tecla Menú (ventanas desplegables, modo juego,
+-- modo presentación e historial del portapapeles). Los scripts están en
+-- scripts/parked/, sin bind ni permisos de ejecución. Molaría retomarlo:
+-- faltaba que las ventanas de los workspaces especiales se detectaran
+-- estando escondidas (hyprctl clients no las lista) para poder alternarlas.
+-- hl.bind("Menu", hl.dsp.exec_cmd("~/.config/hypr/scripts/parked/menu.sh"))

@@ -11,3 +11,11 @@ hl.window_rule({
     float = true,
     center = true,
 })
+
+-- APARCADO junto al menú de la tecla Menú: cada ventana en su workspace especial.
+-- for class, ws in pairs({ ["scratch-term"] = "term", ["scratch-monitor"] = "monitor", ["scratch-audio"] = "audio" }) do
+--     hl.window_rule({
+--         match = { class = class },
+--         workspace = "special:" .. ws,
+--     })
+-- end
