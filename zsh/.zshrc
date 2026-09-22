@@ -62,7 +62,7 @@ gc()  { git commit -m "$*" }
 gcv() { git commit -v }             # el gc original, por si lo echas de menos
 gopen() {
   local rama="${1:-main}"
-  git fetch upstream && git checkout "$rama" && git pull upstream "$rama"
+  git fetch origin && git checkout "$rama" && git pull origin "$rama"
 }
 # 6. Función lt mejorada (con niveles dinámicos)
 lt() {
