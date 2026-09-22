@@ -7,6 +7,54 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cli_default_open_behavior": "existing_window",
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "auto"
+      },
+      "type": "registry"
+    }
+  },
+  "agent_ui_font_size": 16.0,
+  "disable_ai": false,
+  "active_pane_modifiers": {
+    "border_size": 0.0,
+    "inactive_opacity": 1.0
+  },
+  "window_decorations": "client",
+  "use_system_window_tabs": false,
+  "window_title_separator": " - ",
+  "window_title_format": "${projectName${separator}${fileName}",
+  "focus_follows_mouse": {
+    "enabled": true
+  },
+  "centered_layout": {
+    "right_padding": 0.2,
+    "left_padding": 0.0
+  },
+  "bottom_dock_layout": "contained",
+  "tabs": {
+    "show_close_button": "always",
+    "file_icons": true,
+    "close_position": "right",
+    "git_status": false
+  },
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": true,
+    "show_nav_history_buttons": false,
+    "show": true
+  },
+  "search": {
+    "button": true
+  },
+  "diagnostics": {
+    "button": true
+  },
+  "terminal": {
+    "button": true
+  },
   "vim": {
     "cursor_shape": {
       "insert": "bar",
@@ -54,7 +102,7 @@
   "agent": {
     "button": false,
     "dock": "right",
-    "sidebar_side": "right",
+    "sidebar_side": "left",
     "favorite_models": [],
     "model_parameters": []
   },
@@ -76,17 +124,44 @@
     "tree_view": false
   },
   "project_panel": {
+    "button": true,
+    "sort_order": "default",
+    "sort_mode": "directories_first",
+    "indent_guides": {
+      "show": "always"
+    },
+    "diagnostic_badges": true,
+    "show_diagnostics": "all",
+    "scrollbar": {
+      "show": "auto"
+    },
+    "bold_folder_labels": false,
+    "folder_indicator": "chevron",
+    "git_status": true,
+    "file_icons": true,
+    "hide_gitignore": false,
+    "default_width": 180.0,
     "indent_size": 20.0,
-    "dock": "left"
+    "dock": "right"
   },
   "title_bar": {
-    "show_branch_status_icon": false
+    "button_layout": "platform_default",
+    "show_menus": false,
+    "show_user_picture": false,
+    "show_user_menu": true,
+    "show_sign_in": true,
+    "show_onboarding_banner": true,
+    "show_worktree_name": false,
+    "show_branch_name": true,
+    "show_branch_status_icon": true
   },
   "status_bar": {
+    "pending_keystrokes_indicator": true,
+    "cursor_position_button": false,
     "show_active_file": false,
-    "line_endings_button": true,
+    "line_endings_button": false,
   },
-  "buffer_font_weight": 400.0,
+  "buffer_font_weight": 500.0,
   "buffer_line_height": "standard",
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "session": {
@@ -99,7 +174,7 @@
     }
   },
   "base_keymap": "VSCode",
-  "ui_font_size": 16.0,
-  "buffer_font_size": 15,
+  "ui_font_size": 18.0,
+  "buffer_font_size": 16.0,
   "theme": "VSCode Dark Polished",
 }
