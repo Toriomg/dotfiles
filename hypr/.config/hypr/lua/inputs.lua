@@ -16,7 +16,7 @@ hl.gesture({
 hl.gesture({
     fingers = 3,
     direction = "vertical",
-    action = "float"
+    action = "fullscreen"
 })
 
 hl.gesture({
