@@ -45,6 +45,14 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("swayosd-client --brightness lo
 --hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 --hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
+-- MX Master 3S vía logid (/etc/logid.cfg): rueda de pulgar = cambiar workspace
+hl.bind("CTRL + ALT + left",  hl.dsp.focus({ workspace = "e-1" }))
+hl.bind("CTRL + ALT + right", hl.dsp.focus({ workspace = "e+1" }))
+
+-- MX Master 3S vía logid: gesture button (izq/der) = mover ventana de workspace
+hl.bind("CTRL + ALT + SHIFT + left",  hl.dsp.window.move({ workspace = "e-1" }))
+hl.bind("CTRL + ALT + SHIFT + right", hl.dsp.window.move({ workspace = "e+1" }))
+
 -- --- CAPTURAS DE PANTALLA (Hyprshot) ---
 hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m region --freeze -o ~/Screenshots/"))
 hl.bind("CTRL + Print", hl.dsp.exec_cmd("hyprshot -m window -o ~/Screenshots/"))
