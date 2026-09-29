@@ -42,9 +42,9 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("swayosd-client --brightness lo
 --hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 --hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
--- MX Master 3S vía logid (/etc/logid.cfg): rueda de pulgar = cambiar workspace
-hl.bind("CTRL + ALT + left",  hl.dsp.focus({ workspace = "e-1" }))
-hl.bind("CTRL + ALT + right", hl.dsp.focus({ workspace = "e+1" }))
+-- MX Master 3S vía logid (/etc/logid.cfg): rueda de pulgar = zoom del cursor
+hl.bind("CTRL + ALT + left",  hl.dsp.exec_cmd("~/.config/hypr/scripts/zoom.sh out"))
+hl.bind("CTRL + ALT + right", hl.dsp.exec_cmd("~/.config/hypr/scripts/zoom.sh in"))
 
 -- MX Master 3S vía logid: gesture button (izq/der) = mover ventana de workspace
 hl.bind("CTRL + ALT + SHIFT + left",  hl.dsp.window.move({ workspace = "e-1" }))
