@@ -50,7 +50,9 @@ alias spot="ncspot"
 alias untar="tar -xf"
 alias n="nvim"
 alias cd="z"
+
 alias vpn="sudo -E gpclient connect --browser default myvpn.uc3m.es"
+alias ssh-tfg="ssh hector_tfg@10.117.128.37"
 
 alias c="claude"
 alias cc="claude --continue"
@@ -130,3 +132,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 export PATH="$HOME/.local/bin:$PATH"
+
+alias cpy="wl-copy <"

@@ -6,6 +6,15 @@ My personal dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/)
 
 ---
 
+## Screenshots
+
+| | |
+|---|---|
+| ![kitty + waybar + btop](images/2026-09-30-170324_hyprshot.png) | ![wofi wallpaper picker](images/2026-09-30-165847_hyprshot.png) |
+| ![yazi + neofetch](images/2026-09-30-165414_hyprshot.png) | ![cava visualizer](images/2026-09-30-165657_hyprshot.png) |
+
+---
+
 ## Packages
 
 | Package | Config path | Purpose |
