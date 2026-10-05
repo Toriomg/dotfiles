@@ -1,0 +1,192 @@
+@import url("colors-waybar.css");
+
+/* =====================================================================
+   1. GLOBALES Y RESET
+   ===================================================================== */
+* {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  font-family: "SF Pro Text", "JetBrains Mono Nerd Font", sans-serif;
+  -gtk-icon-transform: scale(1);
+}
+
+window#waybar {
+  all: unset;
+}
+
+tooltip {
+  background: @background;
+  color: @color7;
+  border: 1px solid alpha(@color8, 0.5);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+/* =====================================================================
+   2. CONTENEDORES PRINCIPALES (Layout)
+   ===================================================================== */
+
+.modules-center {
+  padding: 7px;
+  border-radius: 99px;
+  background: alpha(@background, 0.65);
+  margin-top: 10px;
+}
+
+.modules-left {
+  margin-left: 10px;
+}
+
+.modules-right {
+  margin-right: 5px;
+}
+
+.modules-right,
+.modules-left {
+  background: transparent;
+  margin-top: 10px;
+}
+
+/* Píldoras individuales del bloque izquierdo */
+.modules-left > widget > *,
+.modules-right > widget > * {
+  background-color: alpha(@background, 0.65);
+  border-radius: 99px;
+  padding: 7px 9px;
+  margin-right: 5px;
+}
+
+/* =====================================================================
+   3. ESTILOS BASE PARA TODOS LOS MÓDULOS
+   ===================================================================== */
+
+widget > * {
+  padding: 0px 4.5px;
+  transition: all 0.3s ease;
+  color: @color7;
+}
+
+/* Efecto hover global para cualquier módulo */
+widget > *:hover {
+  color: @color5;
+}
+
+/* =====================================================================
+   4. EXCEPCIONES Y SOBREESCRITURAS (Overrides)
+   ===================================================================== */
+
+#custom-notification {
+  padding: 0 15px 0 10px; /* Padding distinto al general */
+  background-color: @color9;
+  color: @color7;
+}
+#custom-notification:hover {
+  color: @color9;
+  background-color: @color7;
+}
+
+#tray menu *,
+#tray menu separator {
+  /* Los elementos del tray menu suelen requerir ser definidos explícitamente */
+  padding: 0px 5px;
+  transition: all 0.3s ease;
+}
+
+/* =====================================================================
+   5. WORKSPACES (Lógica visual específica)
+   ===================================================================== */
+#workspaces button {
+  all: unset;
+  padding: 0px 8px;
+  margin: 0px 2px;
+  border-radius: 99px;
+  color: @color9;
+  transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+  background: alpha(@foreground, 0.1); /* Ligero fondo al pasar el mouse */
+  color: @color7;
+  transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+  background: alpha(@color9, 0.5); /* Fondo sutil para indicar actividad */
+  color: @color7; /* Color de acento para el número activo */
+}
+
+#workspaces button.empty {
+  color: alpha(@color7, 0.2);
+}
+
+#workspaces button.urgent {
+  color: #f53c3c;
+}
+
+
+
+/* =====================================================================
+   6. PRIVACY
+   ===================================================================== */
+
+#privacy-item {
+  color: @color9;
+  margin-top: 3px;
+}
+
+#privacy-item.screenshare {
+  color: rgba(220, 70, 70, 1.0);
+}
+
+#privacy-item.audio-in {
+  color: @color9;
+}
+
+#privacy-item.audio-out {
+  color: @color8;
+}
+
+/* =====================================================================
+   7. MPRIS - ahjora no se usa
+   ===================================================================== */
+#mpris {
+  color: @color7;
+}
+
+#mpris.paused {
+  color: @color8;
+}
+
+/* =====================================================================
+   8. BATERÍA (Lógica de estados)
+   ===================================================================== */
+#battery.charging {
+  color: #26a65b;
+}
+
+#battery.warning:not(.charging) {
+  color: #ffbe61;
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Definición de la animación (No estaba en tu código original) */
+@keyframes blink {
+  to {
+    color: @background;
+  }
+}
+/* =====================================================================
+   9. TEMPERATURA (sale del desplegable a partir de 70 °C)
+   ===================================================================== */
+#custom-temp-hot {
+  color: @color9;
+}

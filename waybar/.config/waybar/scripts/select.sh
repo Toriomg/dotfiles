@@ -27,6 +27,10 @@ main() {
         cat $THEMES/zen/style-zen.css > $STYLECSS
         cat $THEMES/zen/config-zen > $CONFIG
         pkill waybar && waybar
+    elif [[ "$selected_wallpaper" == "$ASSETS/pills.png" ]]; then
+        cat $THEMES/pills/style-pills.css > $STYLECSS
+        cat $THEMES/pills/config-pills > $CONFIG
+        pkill waybar && waybar
     fi
 
 }

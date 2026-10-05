@@ -1,10 +1,6 @@
 {
   "layer": "top",
   "position": "top",
-  "margin-left": 10,
-  "margin-right": 10,
-  "margin-top": 7,
-  "margin-bottom": 0,
   "reload_style_on_change": true,
   "modules-left": [
     "custom/notification",
@@ -24,12 +20,7 @@
     "group/power"
   ],
   "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "active": "",
-      "default": "",
-      "empty": ""
-    },
+    "format": "{name}",
     "all-outputs": true,
     "persistent-workspaces": {
       "*": [
