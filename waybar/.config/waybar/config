@@ -141,7 +141,7 @@
   },
   "custom/calculator": {
     "format": "󰃬 ",
-    "on-click": "kitty qalc",
+    "on-click": "kitty --class qalc qalc",
     "tooltip": true,
     "tooltip-format": "Calculadora"
   },
