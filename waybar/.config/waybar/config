@@ -120,6 +120,7 @@
     "modules": [
       "custom/colorpicker",
       "custom/screenshot",
+      "custom/calculator",
       "hyprland/language"
     ]
   },
@@ -137,6 +138,12 @@
     "on-click": "hyprpicker -a",
     "tooltip": true,
     "tooltip-format": "Seleccionar color"
+  },
+  "custom/calculator": {
+    "format": "󰃬 ",
+    "on-click": "kitty qalc",
+    "tooltip": true,
+    "tooltip-format": "Calculadora"
   },
   "custom/notification": {
     "tooltip": false,
